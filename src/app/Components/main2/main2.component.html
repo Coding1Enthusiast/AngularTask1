@@ -1,0 +1,23 @@
+<style>
+    td,th,table{
+        border: 1px solid black;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+</style>
+<div class="container-fluid">
+    <button type="button" class="btn btn-dark">Go to Main</button>
+
+    <table>
+        <tr><th>Name</th>
+        <th>Surname</th></tr>
+        <div *ngFor="let item of data"> 
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.surname}}</td>
+            </tr>
+            
+          </div>
+    </table>
+    <button type="button" class="btn btn-dark">Go to App</button>
+</div>
